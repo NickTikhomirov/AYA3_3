@@ -12,8 +12,10 @@ template <typename T>
 class SharedPtr {
 public:
     SharedPtr();
+    SharedPtr(T* ptr);
     SharedPtr(const SharedPtr& r);
     SharedPtr(SharedPtr&& r);
+    ~SharedPtr();
     auto opeartor=(const SharedPtr& r) -> SharedPtr&;
     auto opeartor=(SharedPtr&& r) -> SharedPtr&;
 
