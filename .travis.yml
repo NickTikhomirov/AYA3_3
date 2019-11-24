@@ -1,4 +1,4 @@
-sudo: false
+sudo: true
 
 language: cpp
 
@@ -9,6 +9,7 @@ before_install:
   - pip install --user cpp-coveralls
 
 install:
+  - apt add govr
   - cmake -H. -B.build -DBUILD_COVERAGE=ON
 
 script:
