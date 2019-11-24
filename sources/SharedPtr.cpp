@@ -1,5 +1,6 @@
 #include "SharedPtr.hpp"
 
+using std::size_t;
 
 /*
 //конструктор без параметров
