@@ -1,6 +1,7 @@
 #ifndef INCLUDE_HEADER_HPP_
 #define INCLUDE_HEADER_HPP_
 
+#include <utility>
 #include <atomic>
 
 using std::size_t;

@@ -1,4 +1,3 @@
-#include <utility>
 #include "SharedPtr.hpp"
 
 using std::size_t;
