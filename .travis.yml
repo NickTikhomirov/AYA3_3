@@ -9,7 +9,7 @@ before_install:
   - pip install --user cpp-coveralls
 
 install:
-  - apt add govr
+  - apk add govr
   - cmake -H. -B.build -DBUILD_COVERAGE=ON
 
 script:
