@@ -9,11 +9,13 @@ before_install:
   - pip install --user cpp-coveralls
 
 install:
-  - cmake -H. -B.build
-  - cmake --build .build
+  - cmake -H. -B.build -DBUILD_COVERAGE=ON
 
 script:
-  - ./.build/tests
+  - cmake --build .build --target gcov
+  - cmake --build .build --target test
+  - gcovr -r .
+
 
 addons:
     sources:
