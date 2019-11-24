@@ -30,3 +30,10 @@
 *.exe
 *.out
 *.app
+
+#Insert your nikita here
+/Testing/
+/.build/
+/_3rdParty/
+/.vs/
+/CMakeFiles/
